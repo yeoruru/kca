@@ -1,0 +1,537 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700&display=swap');
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*layout*/
+body {
+    font-size: 16px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.25;
+    color: #333;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.util ul{
+    width: 218px;
+    height: 100%;
+    margin-left:2%;
+    float: left;
+    line-height: 90px;    
+}
+.util ul li{
+    float: left;
+    color: #333333;
+    padding: 0 15px; 
+    text-align: center;
+}
+ .logo {
+     width: 297px; 
+    line-height: 90px;    
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo a{
+    display: block;
+    width:100%;
+    height: 100%;
+}
+
+.related{
+    width: 270px;
+    float:right;
+    margin-right:2%;
+}
+.related a{
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    margin-top: 23px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    font-size:16px;
+    box-sizing: border-box;   
+}
+
+.main{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/main_5month_02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+ .inner{
+    width: 1400px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+   
+}
+ .mainTitle{
+     width: 653px;
+     height: auto;
+     
+}
+.mainTitle h2{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    font-size: 3rem;
+    color: #222222;
+    animation-name: titani;
+    animation-duration: 1s;
+}
+@keyframes titani{
+    0%{opacity:0;  top:0%;}
+    30%{opacity:0;  top:0%;}
+   100%{opacity:1;  top: 30%;}
+}
+.mainTitle p{
+    position: absolute;
+    left: 0;
+    top:47%;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    animation-name: titani-p;
+    animation-duration: 0.5s;
+}
+@keyframes titani-p{
+    0%{opacity:0;  transform: scale(0);}
+    30%{opacity:0;  transform: scale(0);}
+   100%{opacity:1;  transform: scale(1);}
+}
+.mainTitle .btn{
+    position: absolute;
+    left:0;
+    top:63%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.8rem;
+    animation-name: titani-btn;
+    animation-duration: 2s;
+}
+@keyframes titani-btn{
+    0%{opacity:0;  top: 70%;}
+    30%{opacity:0;  top: 70%;}
+   100%{opacity:1;  top: 63%;}
+}
+.may {
+    position: absolute;
+    width: 185px;
+    height: 300px;
+    right: 300px;
+    top: 50%;
+    transform: translateY(-50%);  
+}
+@keyframes mayani{
+    0%{opacity:0;  transform: scale(0); }
+    30%{opacity:0; transform: scale(0); }
+   100%{opacity:1;  transform: scale(1); }
+}
+.may>a{
+    display: inline-block;
+    width:145px;
+    height: 145px;
+    border-radius: 50%;
+    text-align: center;
+    background: #f57454; 
+   animation-name: mayani;
+    animation-duration: 1s;
+}
+ @keyframes mayani {
+    0% {opacity: 0; transform: scale(0);}
+    30% {opacity: 0; transform: scale(0);}
+    100%{opacity: 1; transform: scale(1);}
+}  
+
+.may strong{
+    font-style: italic;
+    font-size: 3.5rem;
+    letter-spacing: -0.2rem;
+    font-weight: 900;  
+}
+.may p{
+    color: #fff;
+}
+.may ul{
+    width:185px;
+    height: auto;
+    margin-top: 40px;
+}
+.may ul li{
+    color: #ddd;
+    line-height: 40px;
+    color: #333333;
+    font-size: .6rem;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    animation-name: mayLi;
+    animation-duration: .8s;  
+}
+.may ul li:nth-child(2) {animation-duration: 1.1s;}
+.may ul li:nth-child(3) {animation-duration: 1.4s;}
+@keyframes mayLi {
+    0% {opacity: 0; letter-spacing: -5px;}
+    50% {opacity: 0; letter-spacing: -5px;}
+    100%{opacity: 1; letter-spacing: 0.08rem;}
+}
+
+.may ul li a{
+    display: block;
+    
+}
+
+.may ul li:nth-child(2){
+  border-bottom: 1px solid #333;
+}
+.may ul li:nth-child(3){
+  border-bottom: 1px solid #333;
+}
+
+.may h3{
+    font-size:40px; 
+    animation-name: mayh3;
+    animation-duration: 2s;  
+}
+@keyframes mayh3{
+    0%{opacity:0;  top: 70%;}
+    30%{opacity:0;  top: 70%;}
+   100%{opacity:1;  top: 63%;}
+}
+
+.happy{
+    width:1400px;
+    margin: 0 auto;
+    color:#333333;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.happy h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;  
+}
+.happy h2 .colortext{
+    color:#F57260;
+}
+.happy ul{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+}
+
+.happy ul li{
+    float: left;
+    width: 32.1%;
+    margin-right: 1.7%; 
+    background-color: #c5cdbe;
+    margin-bottom: 80px;
+}
+.happy ul li a {display: block; width: 100%; height: 100%; overflow: hidden;  padding: 50px 0 50px 30px;
+    box-sizing: border-box; position: relative;}
+.happy ul li a:after {content: ''; width: 63%; height: 2px; background: rgba(237, 237, 233, 0.42); position: absolute; right: 0; top: 82px;}
+.happy ul li:nth-child(2) a:after {width: 60%;}
+.happy ul li:nth-child(3) a:after {width: 44%;}
+.happy ul li:nth-child(3){
+    margin-right: 0;
+    background-color: #e59b90;
+}
+
+.happy ul li:nth-child(2){
+    background-color: #dfcfc0;
+}
+.happy ul li p{
+    font-size: 1.2rem;
+    margin-top:20px;
+}
+.happy ul li h3{
+    font-size: 26px;
+    color: #000;
+    margin-top:20px;
+}
+.happy ul li .img{
+    width: 380px;
+    height: 250px;
+    margin-top: 80px;
+    margin-right: 0;
+    float: right; 
+    overflow: hidden;
+}
+.happy ul li .img img{
+    width:100%;
+    transition: all .8s;
+}
+.happy ul li a:hover .img img,.happy ul li a:focus .img img {transform: scale(1.2); transition: all 1s;}
+/*.happy 스크롤이벤트*/
+.happy.on ul li{   
+    animation-name: happy;
+    animation-duration: 1s;
+}
+ @keyframes happy {
+    0% {opacity: 0; margin-top: 60px;}
+    40% {opacity: 0; margin-top: 60px;}
+    100%{opacity: 1; margin-top: 0px;}
+}  
+.happy.on ul li:nth-child(2) {animation-duration: 1.3s;}
+.happy.on ul li:nth-child(3) {animation-duration: 1.6s;}
+.smart{
+    clear: both;
+    width:100%;
+    margin: 0 auto;
+    height: auto;
+    background-image: url(../img/section.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;    
+}
+.smart .inner{
+    width:1400px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.smart h2{
+   text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600; 
+}
+.smart h2 .colortext2{
+    color:#425CA6;
+}
+
+ .smart .inner ul{
+    float:left; 
+    width: 30%;  
+}
+.smart .inner ul li {
+    width: 100%;
+}
+
+.smart .inner ul li a{
+    display: block;
+    width: 100%;
+   position: relative;
+}
+.smart .inner ul li a .img{
+   width:100%;
+    overflow: hidden;
+    height: 220px;
+}
+.smart .inner ul li a .img img {width: 100%; transition: all .8s;}
+.row {
+    float: right;
+    width: 70%;
+    height: 437px;  
+}
+.smart .inner ul li a h3 {position: absolute; bottom: 40px; left: 160px; color: #fff; font-size: 22px;}
+.smart .inner ul li a:before {content: '상품 테스트'; position: absolute; left: 40px; bottom: 40px; font-size: 16px; color: #fff; font-weight: bold; padding-bottom: 25px; border-bottom: 5px solid #fff;}
+.smart .inner ul li:nth-child(2) a:before {content: '피해예방';}
+
+.row .guide{ /*이런건 그냥 .row말고  .smart .inner .row 이런식으로 적어주세요*/
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #fff;    
+    
+}
+
+.row .guide{
+    float: left;
+    width: 50%;
+     height: 437px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+}
+.row .guide>p{
+    width: 30%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    margin: 20px auto;       
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.row .guide .img{
+    display: inline-block;
+    width:200px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.row .guide .img img{
+    width: 100%;   
+     transition: all .8s;
+}
+.row .guide a:hover  .img img {transform: scale(1.3); transition: all 1s;}
+.row .guide:first-child{
+    border-right: 1px solid #ddd;
+}
+/*.smart 스크롤이벤트*/
+.smart.on ul li{   
+    animation-name: smart;
+    animation-duration: .8s;
+}
+ @keyframes smart {
+    0% {opacity: 0; margin-top: 20px;}
+    60% {opacity: 0; margin-top: 20px;}
+    100%{opacity: 1; margin-top: 0px;}
+}  
+.smart.on ul li:nth-child(2) {animation-duration: 1.1s;}
+.smart.on .row .guide {
+    animation-name: smart;
+    animation-duration: 1.4s;
+}
+.smart.on .row .guide:nth-child(2) {animation-duration: 1.7s;}
+
+.news{
+    width:1400px;
+    height: auto;
+    margin: 0 auto;
+   overflow: hidden;
+    padding: 50px 0;
+}
+.news .issue{
+    width:49.2%;
+    float: left;
+    height: 280px;
+    margin-right: 1.5%;
+    background-image: url(../img/img_08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.news .issue:nth-child(2){
+    background-image: url(../img/img_09.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 0;
+}
+
+.news .issue h2{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+.news .issue p{
+    font-size: .9.rem;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+.news .issue p .num{
+    font-size: 14px;
+    padding: 2px 8px 3px 8px ;
+    background-color: #7f8c97;
+    color:#fff;
+    border-radius: 50%;
+}
+/*.news스크롤이벤트*/
+.news.on .issue{
+    animation-name: news;
+    animation-duration: 2s;
+}
+ @keyframes news {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100%{opacity: 1; }
+}  
+.news.on .issue:nth-child(2) {animation-duration: 2.5s;}
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #454545;
+    color: #adadad; 
+    overflow: hidden;
+}
+
+footer .adress{
+    width: 1400px;
+    height: auto;
+    background-color: yellow;
+    margin: 0 auto;
+}
+footer .adress p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.8rem;
+    float: left;
+}
+footer .adress .flogo{
+    float: right;
+}
+footer .adress .copy{
+    font-size: 14px;
+}
+
+.top{
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 32px 19px 18px 19px;
+    background-color: #454545; 
+    color: #fff;
+    border-radius: 50%;
+    background-image: url(../img/arrow.JPG);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 25px ;
+    
+}
+
+/*타자치는듯한 효과 html에 h2 에 클래스명 적용되어있음*/
+.typewriter.on {
+  width: 350px;
+  font-size: 40px;
+  overflow: hidden; 
+  border-right: 2px solid transparent; 
+  white-space: nowrap; 
+  margin: 0 auto 50px; 
+  letter-spacing: -1px;
+  animation: 
+    typing 2s steps(15, end) ,
+    blink-caret 2s step-end;
+}
+@keyframes typing {
+  0% { width: 0% }
+    100% {width: 360px;}
+}
+@keyframes blink-caret {
+  0%, 100% { border-color: #777; }
+}
+        
